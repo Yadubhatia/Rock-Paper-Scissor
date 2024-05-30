@@ -4,17 +4,17 @@ options = ["Rock", "Paper", "Scissors"]
 
 user_choice = input("Choose Rock, Paper, or Scissors: ")
 computer_choice = random.choice(options)
-
+a=user_choice.capitalize()
 print("You chose: ", user_choice)
 print("Computer chose: ", computer_choice)
 
-if user_choice == computer_choice:
+if a == computer_choice:
     print("It's a tie!")
-elif user_choice == "Rock" and computer_choice == "Scissors":
+elif a == "Rock" and computer_choice == "Scissors":
     print("You win!")
-elif user_choice == "Paper" and computer_choice == "Rock":
+elif a == "Paper" and computer_choice == "Rock":
     print("You win!")
-elif user_choice == "Scissors" and computer_choice == "Paper":
+elif a == "Scissors" and computer_choice == "Paper":
     print("You win!")
 else:
     print("Computer wins!")
